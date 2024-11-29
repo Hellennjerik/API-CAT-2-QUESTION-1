@@ -1,22 +1,25 @@
-# Product Management API
+# E-Commerce Customer and Order Management
 
-This project is a simple Flask-based API for managing products.The products are stored in memory for the duration of the server's runtime.
+This project provides a simple Django-based system to manage customers and their orders. 
 
 ## Features
 
-- Add a new product
-- Retrieve a list of all products
+- **Customer Model**: Stores basic customer information (name and email).
+- **Order Model**: Tracks orders placed by customers with the order date and total amount.
+- **Database Relationships**: A one-to-many relationship where a customer can place multiple orders, but each order is linked to only one customer.
 
 ## Technologies Used
 
-- **Flask** - A lightweight Python web framework for building APIs.
-- **Requests** - A Python library for making HTTP requests, used in the client to interact with the API.
-- **JSON** - For data exchange between the client and the server.
+- **Django** - A high-level Python web framework for building web applications.
+- **SQLite** (default) - Database backend for storing customer and order information. You can configure a different database if needed.
+- **Django ORM** - Object-relational mapping for interacting with the database.
 
+## Setup Instructions
+
+### Prerequisites
 
 - Python 3.x
 - `pip` for installing dependencies
-
-### Installation
+- Basic knowledge of Django and its architecture
 
 
